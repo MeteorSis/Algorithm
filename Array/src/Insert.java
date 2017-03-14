@@ -6,7 +6,9 @@ class Insert {
     }
 
     static void insert(int[] a, int index, int value) {
-
+    	for(int i=a.length-1; i>index; --i)
+    		a[i]=a[i-1];
+    	a[index]=value;
     }
 
     public static void main(String[] args) {
