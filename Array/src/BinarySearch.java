@@ -58,7 +58,7 @@ public class BinarySearch {
         sort(a);
         System.out.println(Arrays.toString(a));
 
-  //      for (int i = 0; i < 30; ++i) {
+        for (int i = 0; i < 30; ++i) {
             int value = random.nextInt(20);
             int i1 = search1(a, value);
             int i2 = search2(a, value);
@@ -68,9 +68,9 @@ public class BinarySearch {
                 System.out.printf("Ok: value=%d, i1=%d, i2=%d i3=%d\n", value, i1, i2, i3);
             } else {
                 System.out.printf("Error: value=%d, i1=%d, i2=%d i3=%d\n", value, i1, i2, i3);
-                //break;
+                break;
             }
-        
+        }
         System.out.println("done");
     }
 }
